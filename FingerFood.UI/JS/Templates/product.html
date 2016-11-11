@@ -1,0 +1,23 @@
+﻿<div class="container">
+    <h2>{{saludo}}</h2>
+    <table class="table table-striped">
+        <caption>Basic Table Layout</caption>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Categoria</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="product in products">
+                <td>{{product.Id}}</td>
+                <td>{{product.Name}}</td>
+                <td>{{product.Category}}</td>
+                <td><a class="btn mini blue-stripe" href="#/productEdit/{{product.Id}}">Edit</a></td>
+                <td><a href="#" class="confirm-delete btn mini red-stripe" role="button" >Delete</a></td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
